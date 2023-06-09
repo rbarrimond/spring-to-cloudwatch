@@ -7,7 +7,19 @@ management:
       exposure:
         include: health, metrics, prometheus
   endpoint:
-    prometheus:
-      enabled: true
     health:
       show-details: always
+
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+      cloudwatch:
+        enabled: true
+        namespace: springToCloudWatch
+        batchSize: 10
+
+logging:
+  level:
+    io:
+      micrometer: DEBUG
