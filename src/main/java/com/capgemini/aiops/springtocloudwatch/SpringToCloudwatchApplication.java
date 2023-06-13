@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
 @EnableScheduling
-@ImportResource("classpath*:applicationContext.xmlc")
+@ImportResource("classpath*:applicationContext.xml")
 @Slf4j
 public class SpringToCloudwatchApplication {
 
