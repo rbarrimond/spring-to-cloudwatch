@@ -16,10 +16,19 @@ management:
         enabled: true
       cloudwatch:
         enabled: true
-        namespace: springToCloudWatch
+        namespace: SpringToCloudWatch
         batchSize: 10
+
+cloud:
+  aws:
+    stack:
+      auto: false
 
 logging:
   level:
     io:
       micrometer: DEBUG
+    org:
+      springframework:
+        web: WARN
+        cloud: DEBUG
