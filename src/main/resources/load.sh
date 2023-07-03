@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 
 read -p "Enter port number:" LOAD_PORT
 
 while true
 do
     curl "localhost:$LOAD_PORT"
-    sleep "$((expr $RANDOM % 5))s"
+    let x="$RANDOM % 5"
+    echo ""
+    echo "Pausing $x seconds."
+    sleep $x"s"
 done
