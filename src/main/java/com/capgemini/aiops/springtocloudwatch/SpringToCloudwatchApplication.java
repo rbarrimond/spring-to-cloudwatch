@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ImportResource;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
-@ImportResource("classpath*:applicationContext.xml")
+// @ImportResource("classpath*:applicationContext.xml")
 @Slf4j
 public class SpringToCloudwatchApplication {
 
