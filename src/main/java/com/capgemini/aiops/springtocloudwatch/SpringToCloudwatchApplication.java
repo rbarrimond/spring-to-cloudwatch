@@ -7,11 +7,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ImportResource;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
-// @ImportResource("classpath*:applicationContext.xml")
 @Slf4j
 public class SpringToCloudwatchApplication {
 
